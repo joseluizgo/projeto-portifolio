@@ -18,6 +18,16 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
 }
 
 header {
@@ -265,6 +275,10 @@ footer a:hover {
 
   section#detalhes {
     grid-column: 3/4;
+  }
+
+  div.video-container {
+    max-width: 800px;
   }
 
   #skill-container {
