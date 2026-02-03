@@ -218,7 +218,7 @@ article h2 {
   gap: 20px;
 }
 
-#projeto-container .projeto {
+#projeto-container a.projeto {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -229,7 +229,7 @@ article h2 {
   transition: border-color 0.5s, border-width 0.5s;
 }
 
-#projeto-container .projeto:hover {
+#projeto-container a.projeto:hover {
   border-color: var(--destaque);
   border-left-width: 15px;
   cursor: pointer;
@@ -241,6 +241,11 @@ article h2 {
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
+}
+
+#projeto-container a.projeto {
+  text-decoration: none;
+  color: var(--texto);
 }
 
 footer {
